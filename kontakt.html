@@ -44,7 +44,7 @@
               <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/table.html">Emmissionstabelle</a>
+              <a class="nav-link" href="/table.html">Emmissionstabelle</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/gallerie.html">Gallerie</a>
@@ -63,68 +63,9 @@
       <!-- Hauptcontent-Bereich -->
       <main>
         <div class="row">
-            <div class="col">
-           <!-- Emmissionstabelle --> 
-            <input type="text" id="myInput" onkeyup="tabelleFiltern()" placeholder="Suche" title="Emmissionstabelle von Unternehmen und Ländern">
-                <table class="table" id="emmissionstabelle">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Unternehmen</th>
-                            <th scope="col">Land</th>
-                            <th scope="col">CO2 Emmissionen in Tonnen</th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Germany</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Berglunds snabbkop</td>
-                        <td>Sweden</td>
-                        <td>200</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Island Trading</td>
-                        <td>UK</td>
-                        <td>300</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Koniglich Essen</td>
-                        <td>Germany</td>
-                        <td>400</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Laughing Bacchus Winecellars</td>
-                        <td>Canada</td>
-                        <td>500</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td>Magazzini Alimentari Riuniti</td>
-                        <td>Italy</td>
-                        <td>700</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>North/South</td>
-                        <td>UK</td>
-                        <td>800</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td>Paris specialites</td>
-                        <td>France</td>
-                        <td>900</td>
-                    </tr>
-                </table>
-            </div>
+          <div class="col">
+            <h1>Kontakt</h1>
+          </div>
         </div>
       </main>
     
@@ -143,30 +84,6 @@
 
     <!-- Ende des Bootstrap Containers-->
     </div>    
-
-   <!-- Funktion zum Filtern der Tabelle --> 
-    <script>
-        function tabelleFiltern() {
-            var input, filter, table, tr, td, cell, i, j;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("emmissionstabelle");
-            tr = table.getElementsByTagName("tr");
-            for (i = 1; i < tr.length; i++) {
-                tr[i].style.display = "none";
-                td = tr[i].getElementsByTagName("td");
-                for (var j = 0; j < td.length; j++) {
-                    cell = tr[i].getElementsByTagName("td")[j];
-                    if (cell) {
-                    if (cell.innerText.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                    break;
-                    } 
-                    }
-                }           
-            }
-        }
-    </script>
 
     <!-- Bootstrap setzt diese drei JavaScript Plugins voraus, in genau dieser Reihenfolge: 1. jQuery, 2. Popper.js, 3. Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
