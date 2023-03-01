@@ -56,6 +56,7 @@
         </div>
       </nav>
     </header>
+    <!-- Ende Header -->
 
     <!-- Beginn des Bootstrap Containers-->
     <div class="container">
@@ -64,69 +65,86 @@
       <main>
         <div class="row">
             <div class="col">
-           <!-- Emmissionstabelle --> 
+
+              <style>
+                table.sortable thead {
+                background-color:#eee;
+                color:#666666;
+                font-weight: bold;
+                cursor: default;
+                }
+                table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+                content: " \25B4\25BE" 
+                }
+              </style>
+
+            <!-- Emmissionstabelle --> 
             <input type="text" id="myInput" onkeyup="tabelleFiltern()" placeholder="Suche" title="Emmissionstabelle von Unternehmen und Ländern">
-                <table class="table" id="emmissionstabelle">
+                <table class="table sortable" id="emmissionstabelle">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
+                            <th class="sorttable_nosort" scope="col">ID</th>
                             <th scope="col">Unternehmen</th>
                             <th scope="col">Land</th>
-                            <th scope="col">CO2 Emmissionen in Tonnen</th>
+                            <th class="sorttable_nosort" scope="col">CO2 Emmissionen in Tonnen</th>
                         </tr>
                     </thead>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Germany</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Berglunds snabbkop</td>
-                        <td>Sweden</td>
-                        <td>200</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Island Trading</td>
-                        <td>UK</td>
-                        <td>300</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Koniglich Essen</td>
-                        <td>Germany</td>
-                        <td>400</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Laughing Bacchus Winecellars</td>
-                        <td>Canada</td>
-                        <td>500</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td>Magazzini Alimentari Riuniti</td>
-                        <td>Italy</td>
-                        <td>700</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>North/South</td>
-                        <td>UK</td>
-                        <td>800</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td>Paris specialites</td>
-                        <td>France</td>
-                        <td>900</td>
-                    </tr>
-                </table>
+                    <tbody>
+                        <tr>
+                            <td scope="row">1</td>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Germany</td>
+                            <td>1050</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">2</td>
+                            <td>Berglunds snabbkop</td>
+                            <td>Sweden</td>
+                            <td>7500</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">3</td>
+                            <td>Island Trading</td>
+                            <td>UK</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">4</td>
+                            <td>Koniglich Essen</td>
+                            <td>Germany</td>
+                            <td>10002</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">5</td>
+                            <td>Laughing Bacchus Winecellars</td>
+                            <td>Canada</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">6</td>
+                            <td>Magazzini Alimentari Riuniti</td>
+                            <td>Italy</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">7</td>
+                            <td>North/South</td>
+                            <td>UK</td>
+                            <td>800</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">8</td>
+                            <td>Paris specialites</td>
+                            <td>France</td>
+                            <td>9000</td>
+                        </tr>
+                    </tbody>    
+                  </table>
+                  <!-- Ende der Emmissionstabelle --> 
             </div>
         </div>
       </main>
+      <!-- Ende Hauptcontent-Bereich -->
     
       <!-- Footer, Informationen für rechtliche Hinweise etc. -->
       <footer>
@@ -140,9 +158,10 @@
           </div>
         </div>
       </footer>
+      <!-- Ende Footer -->
 
-    <!-- Ende des Bootstrap Containers-->
-    </div>    
+    </div>
+    <!-- Ende des Bootstrap Containers-->    
 
    <!-- Funktion zum Filtern der Tabelle --> 
     <script>
@@ -167,6 +186,10 @@
             }
         }
     </script>
+
+   <!-- implementiertes Skript zum Sortieren der Tabelle -->  
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+
 
     <!-- Bootstrap setzt diese drei JavaScript Plugins voraus, in genau dieser Reihenfolge: 1. jQuery, 2. Popper.js, 3. Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
