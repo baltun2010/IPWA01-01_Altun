@@ -33,7 +33,7 @@
 
   <body>
    <!-- Header Navigation die zur ausklappbaren Menüleiste für Geräte mit kleineren Displays wird -> Position wird je nach Browser-Default geändert (flex-row class von Bootstrap)--> 
-   <header>   
+   <header class="sticky-top">   
       <nav class="flex-row navbar navbar-expand-sm navbar-light bg-light">
         <button class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#navbarContent">  
         </button>
@@ -49,9 +49,6 @@
             <li class="nav-item">
               <a class="nav-link" href="/gallerie.html">Gallerie</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/impressum.html">Impressum</a>
-            </li>
           </ul>
         </div>
       </nav>
@@ -64,8 +61,8 @@
       <!-- Hauptcontent-Bereich -->
       <main>
         <div class="row">
-          <div class="col">
-            <h1>Kontakt</h1>
+          <div class="col mt-5 mb-5">
+            <h1>Sie treffen uns im Wald</h1>
           </div>
         </div>
       </main>
@@ -73,7 +70,7 @@
     
       <!-- Footer, Informationen für rechtliche Hinweise etc. -->
       <footer>
-        <div class="row">
+        <div class="row mt-5">
           <div class="col">
             <nav class="nav justify-content-center">
               <a class="nav-link" href="/impressum.html">Impressum</a>

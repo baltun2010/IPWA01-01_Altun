@@ -33,29 +33,26 @@
 
   <body>
    <!-- Header Navigation die zur ausklappbaren Menüleiste für Geräte mit kleineren Displays wird -> Position wird je nach Browser-Default geändert (flex-row class von Bootstrap)--> 
-   <header>   
-      <nav class="flex-row navbar navbar-expand-sm navbar-light bg-light">
-        <button class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#navbarContent">  
-        </button>
-        <a class="navbar-brand"><img src="/Bilder/RW-Logo.png" height="50"></a>
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/table.html">Emmissionstabelle</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/gallerie.html">Gallerie</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/impressum.html">Impressum</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+   <header class="sticky-top">   
+    <nav class="flex-row navbar navbar-expand-sm navbar-light bg-light">
+      <button class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#navbarContent">  
+      </button>
+      <a href="/index.html"><img class="navbar-brand" src="/Bilder/RW-Logo.png" height="60"></a>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/table.html">Emmissionstabelle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/gallerie.html">Gallerie</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
     <!-- Ende Header -->
 
     <!-- Beginn des Bootstrap Containers-->
@@ -63,7 +60,9 @@
     
       <!-- Hauptcontent-Bereich -->
       <main>
-        <div class="row">
+
+        <!-- Jumbotron Zeile -->
+        <div class="row mt-5 mb-5">
           <div class="col">
             <div class="jumbotron">
               <h1 class="text-center">Willkommen auf Rettet den Wald!</h1>
@@ -73,12 +72,77 @@
             </div>
           </div>
         </div>
+        <!-- Ende der Jumbotron Zeile -->
+        
+        
+        <!-- Karten Zeile -->
+        <div class="row">
+          <div class="col-12 mb-3">
+            <h3>Wir schützen nicht nur Wälder, sondern auch ihre Bewohner.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <div class="card h-100" >
+              <div class="card-header">
+                Ein Wald in Brandenburg
+              </div>
+              <img class="card-img-top" src="/Bilder/Waldweg.jpg" height="300rem">
+              <div class="card-body">
+                <p class=" card-text">
+                  Dieses Waldstück konnte mit unserer Hilfe zu einem Naturschutzgebiet erklärt werden.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <div class="card h-100" >
+              <div class="card-header">
+                Ein Fluss in Amerika
+              </div>
+              <img class="card-img-top" src="/Bilder/Fluss Amerika.jpeg" height="300rem">
+              <div class="card-body">
+                <p class=" card-text">
+                  Wälder sind nicht nur Bäume, sondern beinhalten auch Flüsse und Seen. Dieser Fluss wurde von Unternehmen als Müllentsorgung genutzt. Jetzt nicht mehr, dank Rettet den Wald.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <div class="card h-100">
+              <div class="card-header">
+                Ein junges Affenbaby im asiatischen Wald
+              </div>
+              <img class="card-img-top" src="/Bilder/Babyaffe.jpeg" height="300rem">
+              <div class="card-body">
+                <p class=" card-text">
+                  Diese Art vom Affen war vom aussterben bedroht, nicht weil sie gejagd worden ist, sondern weil ihr natürlicher Lebensraum von Menschen zerstört wurde. Durch die Wiederherstellung des Waldes konnte die Population des Affen erhöht werden. Er ist nicht mehr vom Aussterben bedroht.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <div class="card h-100">
+              <div class="card-header">
+                Die Aufforstung eines Waldes in Europa
+              </div>
+              <img class="card-img-top" src="/Bilder/Wald Europa.jpeg" height="300rem">
+              <div class="card-body">
+                <p class=" card-text">
+                  Nach einem Waldbrand helfen die Ehrenamtlichen Helfer von Rettet den Wald über mehrere Jahre den Wald aufzuforsten.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Ende der Karten -->
+
       </main>
       <!-- Ende Hauptcontent-Bereich -->
     
       <!-- Footer, Informationen für rechtliche Hinweise etc. -->
       <footer>
-        <div class="row">
+        <div class="row mt-5">
           <div class="col">
             <nav class="nav justify-content-center">
               <a class="nav-link" href="/impressum.html">Impressum</a>

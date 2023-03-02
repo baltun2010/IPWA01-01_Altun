@@ -33,7 +33,7 @@
 
   <body>
    <!-- Header Navigation die zur ausklappbaren Menüleiste für Geräte mit kleineren Displays wird -> Position wird je nach Browser-Default geändert (flex-row class von Bootstrap)--> 
-   <header>   
+   <header class="sticky-top">   
       <nav class="flex-row navbar navbar-expand-sm navbar-light bg-light">
         <button class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#navbarContent">  
         </button>
@@ -49,9 +49,6 @@
             <li class="nav-item">
               <a class="nav-link" href="/gallerie.html">Gallerie</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/impressum.html">Impressum</a>
-            </li>
           </ul>
         </div>
       </nav>
@@ -64,12 +61,35 @@
       <!-- Hauptcontent-Bereich -->
       <main>
         <div class="row">
-          <div class="col">
+          <div class="col mt-5 mb-5">
             <hr>
             <h3 class="text-center">Impressum</h3>
             <hr>
-            <p>Wichtige Rechtliche Hinweise: bla bla bla</p>
-            <p>Noch mehr Hinweise: bla bla bla</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5>Rettet den Wald</h5>
+            <p>Wichtige Str. 1</p>
+            <p>10666 Berlin</p>
+            <br>
+            <p>Handelsregister: #</p>
+            <p>Amtsgericht Charlottenburg</p>
+            <p>UST-ID: #</p>
+            <br>  
+            <p>Vertreten durch die persönlich haftende Gesellschafter</p>
+            <p>Max Mustermann</p>
+            <p>Noch Wichtigere Str. 2</p>
+            <p>10726 Berlin</p>
+            <br> 
+            <p>Handelsregister: #</p>
+            <p>Amtsgericht Charlottenburg</p>
+            <p>Geschäftsführer: Woody Forest</p>
+            <br>
+            <p>Kontakt:</p>
+            <p>E-Mail: <a href= "mailto:kontakt@rettet-den-wald.de">kontakt@rettet-den-wald.de</a></p>
+            <p>Telefon: 030-123 456</p>
+            <p>Fax: 030-123 456 1</p>
           </div>
         </div>
       </main>
@@ -77,7 +97,7 @@
     
       <!-- Footer, Informationen für rechtliche Hinweise etc. -->
       <footer>
-        <div class="row">
+        <div class="row mt-5">
           <div class="col">
             <nav class="nav justify-content-center">
               <a class="nav-link" href="/impressum.html">Impressum</a>
