@@ -28,12 +28,15 @@
     <link rel="manifest" href="/Favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/Favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff"> 
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS Sytlesheet verlinkung -->
+    <link href="/style.css" rel="stylesheet">
   </head>
 
   <body>
-   <!-- Header Navigation die zur ausklappbaren Menüleiste für Geräte mit kleineren Displays wird -> Position wird je nach Browser-Default geändert (flex-row class von Bootstrap)--> 
-   <header class="sticky-top">   
+    <!-- Header Navigation die zur ausklappbaren Menüleiste für Geräte mit kleineren Displays wird -> Position wird je nach Browser-Default geändert (flex-row class von Bootstrap)--> 
+    <header class="sticky-top">   
       <nav class="flex-row navbar navbar-expand-sm navbar-light bg-light">
         <button class="navbar-toggler navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#navbarContent">  
         </button>
@@ -67,19 +70,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12">
-
-              <style>
-                table.sortable thead {
-                background-color:#eee;
-                color:#666666;
-                font-weight: bold;
-                cursor: default;
-                }
-                table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
-                content: " \25B4\25BE" 
-                }
-              </style>
+          <div class="col">
 
             <!-- Emmissionstabelle -->
             <form>
@@ -162,33 +153,32 @@
     </div>
     <!-- Ende des Bootstrap Containers-->    
 
-   <!-- Funktion zum Filtern der Tabelle --> 
+    <!-- Funktion zum Filtern der Tabelle --> 
     <script>
-        function tabelleFiltern() {
-            var input, filter, table, tr, td, cell, i, j;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("emmissionstabelle");
-            tr = table.getElementsByTagName("tr");
-            for (i = 1; i < tr.length; i++) {
-                tr[i].style.display = "none";
-                td = tr[i].getElementsByTagName("td");
-                for (var j = 0; j < td.length; j++) {
-                    cell = tr[i].getElementsByTagName("td")[j];
-                    if (cell) {
-                    if (cell.innerText.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                    break;
-                    } 
-                    }
-                }           
+      function tabelleFiltern() {
+        var input, filter, table, tr, td, cell, i, j;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("emmissionstabelle");
+        tr = table.getElementsByTagName("tr");
+        for (i = 1; i < tr.length; i++) {
+          tr[i].style.display = "none";
+          td = tr[i].getElementsByTagName("td");
+          for (var j = 0; j < td.length; j++) {
+            cell = tr[i].getElementsByTagName("td")[j];
+            if (cell) {
+              if (cell.innerText.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+                break;
+              } 
             }
-        }
+          }                                      
+        }             
+      }
     </script>
 
-   <!-- implementiertes Skript zum Sortieren der Tabelle -->  
+    <!-- implementiertes Skript zum Sortieren der Tabelle -->  
     <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
-
 
     <!-- Bootstrap setzt diese drei JavaScript Plugins voraus, in genau dieser Reihenfolge: 1. jQuery, 2. Popper.js, 3. Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

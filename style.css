@@ -1,0 +1,79 @@
+html {
+    font-family: 'Futura', sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    background-color: mintcream;
+}
+
+header {
+    background-color: mintcream;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+#index-seite {
+    text-align: center;
+    padding: 2rem; 
+}
+
+.jumbotron {
+
+    background-image: url(Bilder/Jumbotron\ Hintergrund\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.jumbotron-text {
+    color: white;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.card-header {
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 2.5rem;
+}
+
+footer a {
+    background: #eee;
+    border: 1px solid forestgreen;
+    border-radius: 3px;
+    color: forestgreen;
+    margin: 0.5rem;
+}
+
+footer a:hover {
+    background: white;
+    color: forestgreen;
+}
+
+.table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
+
+.table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}               
+              
