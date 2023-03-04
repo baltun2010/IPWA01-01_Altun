@@ -1,22 +1,33 @@
 html {
     font-family: 'Futura', sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    
 }
 
 body {
-    background-color: mintcream;
+    background-color: #FAEDCD;
 }
 
 header {
-    background-color: mintcream;
+}
+
+.navbar-custom {
+    background-color: #CCD5AE;
 }
 
 p {
-    font-size: 1rem;
+    line-height: 1.5;
+    color: #432818;
+    
 }
 
 h1 {
     font-weight: bold;
+    color: #432818;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #432818;
 }
 
 #index-seite {
@@ -30,21 +41,42 @@ h1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    
 }
 
 .jumbotron-text {
-    color: white;
-    border: 0.2rem solid white;
+    border: 0.2rem solid #FEFAE0;
     border-radius: 0.5rem;
     padding: 1rem;
 }
 
+.jumbotron-text h1, .jumbotron-text p {
+    color: #FEFAE0; 
+}
+
+.card {
+    border: 0.2rem solid #CCD5AE;
+    background-color: #FEFAE0;
+}
+
 .card-header {
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color: #FEFAE0;
+    color: #432818;
     font-weight: bold;
+}
+
+table {
+    color: #432818;
+}
+
+caption {
+    color: #D4A373;
+}
+
+#myInput {
+    color: #D4A373;
+    background-color: #FEFAE0;
 }
 
 footer {
@@ -54,23 +86,23 @@ footer {
 }
 
 footer a {
-    background: #eee;
-    border: 1px solid forestgreen;
+    background: #FEFAE0;
+    border: 1px solid #CCD5AE;
     border-radius: 3px;
-    color: forestgreen;
+    color: #432818;
     margin: 0.5rem;
 }
 
 footer a:hover {
-    background: white;
-    color: forestgreen;
+    background: #D4A373;
+    color: #FEFAE0;
 }
 
 .table.sortable thead {
-    background-color:#eee;
-    color:#666666;
+    background-color:#CCD5AE;
+    color: #432818;
     font-weight: bold;
-    cursor: default;
+    cursor: pointer;
 }
 
 .table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
