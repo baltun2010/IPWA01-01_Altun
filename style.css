@@ -1,57 +1,35 @@
-html {
-    font-family: 'Futura', sans-serif;
-    font-size: 1.25rem;
-    
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+
+
+/* Alphabetische Sortierung */
 
 body {
     background-color: #FAEDCD;
 }
 
-header {
-}
-
-.navbar-custom {
-    background-color: #CCD5AE;
-}
-
-p {
-    line-height: 1.5;
-    color: #432818;
-    
-}
-
-h1 {
-    font-weight: bold;
-    color: #432818;
-}
-
-h2, h3, h4, h5, h6 {
-    color: #432818;
-}
-
-#index-seite {
-    text-align: center;
-    padding: 2rem; 
-}
-
-.jumbotron {
-
-    background-image: url(Bilder/Jumbotron\ Hintergrund\ 2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-}
-
-.jumbotron-text {
-    border: 0.2rem solid #FEFAE0;
-    border-radius: 0.5rem;
-    padding: 1rem;
-}
-
-.jumbotron-text h1, .jumbotron-text p {
-    color: #FEFAE0; 
+caption {
+    color: #D4A373;
 }
 
 .card {
@@ -63,15 +41,60 @@ h2, h3, h4, h5, h6 {
     text-align: center;
     background-color: #FEFAE0;
     color: #432818;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 2.5rem;
+  }
+  
+footer a {
+    background: #FEFAE0;
+    border: 1px solid #CCD5AE;
+    border-radius: 3px;
+    color: #432818;
+    margin: 0.5rem; 
+  }
+  
+footer a:hover {
+    background: #D4A373;
+    color: #FEFAE0;  
+  }
+
+html {
+    font-family: 'Futura', sans-serif;
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-weight: bold;
+    color: #432818;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #432818;
     font-weight: bold;
 }
 
-table {
-    color: #432818;
+.jumbotron {
+    background-image: url(Bilder/Jumbotron\ Hintergrund\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-caption {
-    color: #D4A373;
+.jumbotron-text {
+    border: 0.2rem solid #FEFAE0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.jumbotron-text h1, .jumbotron-text p {
+    color: #FEFAE0; 
 }
 
 #myInput {
@@ -79,23 +102,30 @@ caption {
     background-color: #FEFAE0;
 }
 
-footer {
-  text-align: center;
-  width: 100%;
-  padding: 2.5rem;
+.navbar-custom {
+    background-color: #CCD5AE;
 }
 
-footer a {
-    background: #FEFAE0;
-    border: 1px solid #CCD5AE;
-    border-radius: 3px;
+p {
+    line-height: 1.5;
     color: #432818;
-    margin: 0.5rem;
 }
 
-footer a:hover {
-    background: #D4A373;
-    color: #FEFAE0;
+#quoteOne {
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+
+}
+
+#quoteTwo {
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+}
+
+table {
+    color: #432818;
 }
 
 .table.sortable thead {
