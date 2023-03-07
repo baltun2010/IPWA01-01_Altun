@@ -47,10 +47,10 @@
               <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/table.html">Emmissionstabelle</a>
+              <a class="nav-link active" href="/table.html">Emissionstabelle</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/gallerie.html">Gallerie</a>
+              <a class="nav-link" href="/galerie.html">Galerie</a>
             </li>
           </ul>
         </div>
@@ -65,7 +65,7 @@
       <main>
         <div class="row mt-5 mb-5">
           <div class="col">
-            <h1>Emmissionstabelle</h1>
+            <h1>Emissionstabelle</h1>
             <br>
             <p id="quoteTwo">"Wir möchten für die Transparenz sorgen, die Ihnen verweigert oder nur schwer zugänglich gemacht wird.", Gründer Mr. Forest</p>
           </div>
@@ -75,16 +75,16 @@
 
             <!-- Emmissionstabelle -->
             <form>
-              <input type="text" id="myInput" onkeyup="tabelleFiltern()" placeholder="Suche" title="Emmissionstabelle von Unternehmen und Ländern">
+              <input type="text" id="myInput" onkeyup="tabelleFiltern()" placeholder="Suche" title="Emissionstabelle von Unternehmen und Ländern">
             </form>
             <div class="table-responsive"> 
-              <table class="table table-hover sortable mt-3" id="emmissionstabelle">
-                <caption>Emmissionstabelle</caption>
+              <table class="table table-hover sortable mt-3" id="emissionstabelle">
+                <caption>Emissionstabelle</caption>
                 <thead>
                   <tr>
                     <th scope="col">Unternehmen</th>
                     <th scope="col">Land</th>
-                    <th class="sorttable_nosort" scope="col">CO2 Emmissionen in Tonnen</th>
+                    <th class="sorttable_nosort" scope="col">CO2 Emissionen in Tonnen</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -160,7 +160,7 @@
         var input, filter, table, tr, td, cell, i, j;
         input = document.getElementById("myInput");
         filter = input.value.toUpperCase();
-        table = document.getElementById("emmissionstabelle");
+        table = document.getElementById("emissionstabelle");
         tr = table.getElementsByTagName("tr");
         for (i = 1; i < tr.length; i++) {
           tr[i].style.display = "none";
