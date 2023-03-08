@@ -157,18 +157,18 @@
     <!-- Funktion zum Filtern der Tabelle --> 
     <script>
       function tabelleFiltern() {
-        var input, filter, table, tr, td, cell, i, j;
+        var input, filter, tabelle, tr, td, element, i, j;
         input = document.getElementById("myInput");
         filter = input.value.toUpperCase();
-        table = document.getElementById("emissionstabelle");
-        tr = table.getElementsByTagName("tr");
+        tabelle = document.getElementById("emissionstabelle");
+        tr = tabelle.getElementsByTagName("tr");
         for (i = 1; i < tr.length; i++) {
           tr[i].style.display = "none";
           td = tr[i].getElementsByTagName("td");
           for (var j = 0; j < td.length; j++) {
-            cell = tr[i].getElementsByTagName("td")[j];
-            if (cell) {
-              if (cell.innerText.toUpperCase().indexOf(filter) > -1) {
+            element = tr[i].getElementsByTagName("td")[j];
+            if (element) {
+              if (element.innerText.toUpperCase().indexOf(filter) > -1) {
                 tr[i].style.display = "";
                 break;
               } 
