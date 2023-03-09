@@ -65,6 +65,7 @@ footer a:hover {
 html {
     font-family: 'Futura', sans-serif;
     font-size: 1.25rem;
+    line-height: 1.5;
 }
 
 h1 {
@@ -107,18 +108,10 @@ h2, h3, h4, h5, h6 {
 }
 
 p {
-    line-height: 1.5;
     color: #432818;
 }
 
-#quoteOne {
-    text-align: center;
-    padding: 2rem;
-    font-style: italic;
-
-}
-
-#quoteTwo {
+#quoteOne, #quoteTwo  {
     text-align: center;
     padding: 2rem;
     font-style: italic;
